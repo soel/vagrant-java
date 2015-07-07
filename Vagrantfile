@@ -9,7 +9,7 @@ config.vm.box_url = "https://github.com/2creatives/vagrant-centos/" +
 
   #config.vm.provision :shell, inline: "yum -y update"
   config.vm.provision :shell, inline: "yum -y install wget"
-  config.vm.provision :shell, inline: 'wget --no-check-certificate --no-cookies - --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u25-b17/jdk-8u25-linux-x64.rpm'
-  config.vm.provision :shell, inline: "sudo rpm -ivh jdk-8u25-linux-x64.rpm"
+  config.vm.provision :shell, inline: 'wget --no-check-certificate --no-cookies - --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.rpm'
+  config.vm.provision :shell, inline: "sudo rpm -ivh jdk-8u45-linux-x64.rpm"
 
 end
